@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Real-time Weather App - Get current weather updates by city name.">
+  <meta name="keywords" content="Weather App, Weather Forecast, Weather API, OpenWeatherMap, JavaScript">
+  <meta name="author" content="Your Name">
+
+  <title>Weather App</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon-32x32.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="index_body">
+  <!-- Header Start -->
+  <header>
+    <div class="navbar">
+      <a href="#" class="logo">WeatherNow</a>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Forecast</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Check Weather</h1>
+
+    <!-- Input Area -->
+    <div class="display_container">
+      <input type="text" id="cityInput" placeholder="Enter city name..." aria-label="City Name" />
+      <button id="getWeatherBtn" title="Click to get weather">Get Weather</button>
+    </div>
+  </div>
+
+  <!-- Output Display -->
+  <div class="weather_display">
+    <div class="output_card">
+      <h2 id="cityName"></h2>
+      <p id="temperature"></p>
+      <p id="description"></p>
+      <p id="weatherIcon"></p>
+    </div>
+  </div>
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 WeatherNow. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- JavaScript -->
+  <script src="logics.js"></script>
+</body>
+</html>
